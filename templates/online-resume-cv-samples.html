@@ -1,0 +1,400 @@
+<title>Create a Resume / CV Now | BEBOSS</title>
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+<!-- The css files are here-->
+<link rel="stylesheet" type="text/css" href="{% static 'css2/letterhead_gen.css' %}">
+<link rel="stylesheet" href="{% static 'css3/open-iconic-bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css3/animate.css' %}">
+
+<link rel="stylesheet" href="{% static 'css3/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css3/owl.theme.default.min.css' %}">
+<link rel="stylesheet" href="{% static 'css3/magnific-popup.css' %}">
+
+<link rel="stylesheet" href="{% static 'css3/aos.css' %}">
+
+<link rel="stylesheet" href="{% static 'css3/ionicons.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'css3/bootstrap-datepicker.css' %}">
+<link rel="stylesheet" href="{% static 'css3/jquery.timepicker.css' %}">
+
+
+<link rel="stylesheet" href="{% static 'css3/flaticon.css' %}">
+<link rel="stylesheet" href="{% static 'css3/icomoon.css' %}">
+<link rel="stylesheet" href="{% static 'css3/style.css' %}">
+<!-- The css files ends here -->
+
+<!-- This html file for css3 section starts here-->
+<section class="ftco-section bg-light">
+    <div class="container">
+            <div class="row justify-content-center mb-3 pb-3">
+      <div class="col-md-12 heading-section text-center ftco-animate">
+        <h2 class="mb-4">Resumes / CV Samples</h2>
+        <p> - Select your preferred template</p>
+        <p> - Click the GENERATE FROM THIS SAMPLE button</p>
+        <p> - Supply your business information correctly in the required fields</p>
+      </div>
+    </div>   		
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+               
+                    <a href="{% static 'img/Resume and CV/resume-cv-1.png' %}" class="img-prod"><img class="img-fluid" src="{% static 'img/Resume and CV/resume-cv-1.png' %}" alt="Resume Generator">
+                   
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>
+                                    <!-- <p>     </p> -->
+                               
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!--  I removed star from here-->
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#">
+                            <!-- <p>{{ data.1 }}</p> -->
+                        </a></h3>
+                        <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="{% url 'generate_resume_now_cv1' %}" class="add-to-cart text-center py-2 mr-1"><span>GENERATE FROM THIS SAMPLE<i class="ion-ios-add ml-1"></i></span></a>
+                            <!-- <a href="{% url 'send-downloaded-letterhead' %}" class="buy-now text-center py-2">Mail to Me<span><i class="ion-ios-cart ml-1"></i></span></a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                    <a href="{% static 'img/Resume and CV/resume-cv-2.png' %}" class="img-prod"><img class="img-fluid" src="{% static 'img/Resume and CV/resume-cv-2.png' %}" alt="Resume Generator">
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>      
+                                    <p>     </p>
+                                
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#">
+                            <p>{{ data.1 }}</p>
+                           
+                        </a></h3>
+                          <!-- <div class="pricing">
+                            <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="{% url 'generate_resume_now_cv2' %}" class="add-to-cart text-center py-2 mr-1"><span>GENERATE FROM THIS SAMPLE <i class="ion-ios-add ml-1"></i></span></a>
+                            <!-- <a href="#" class="buy-now text-center py-2">Mail to Me<span><i class="ion-ios-cart ml-1"></i></span></a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product">
+                    <a href="{% static 'img/Resume and CV/resume-cv-3.png' %}" class="img-prod"><img class="img-fluid" src="{% static 'img/Resume and CV/resume-cv-3.png' %}" alt="Resume Generator">
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>
+                                    <p>     </p>
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        
+                       <h3><a href="#">
+                        <p></p>
+                    </a></h3>
+                          <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="{% url 'letterhead_generator_s3' %}" class="add-to-cart text-center py-2 mr-1"><span>GENERATE FROM THIS SITE <i class="ion-ios-add ml-1"></i></span></a>
+                            <!-- <a href="#" class="buy-now text-center py-2">Mail to Me<span><i class="ion-ios-cart ml-1"></i></span></a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product">
+                    <a href="{% static 'img/Resume and CV/resume-cv-4.png' %}" class="img-prod"><img class="img-fluid" src="{% static 'img/Resume and CV/resume-cv-4.png' %}" alt="Resume Generator">
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">         
+                        <div class="cat">
+                            <span>
+                                <p>     </p>
+                               
+                            </span>
+                        </div>
+
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <h3><a href="#">
+                            <p>{{ data.1 }}</p>
+                           
+                        </a></h3> -->
+                          <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="{% url 'generate_letterhead' %}" class="add-to-cart text-center py-2 mr-1"><span>Generate from this Sample <i class="ion-ios-add ml-1"></i></span></a>
+                            <!-- <a href="#" class="buy-now text-center py-2">Mail To Me<span><i class="ion-ios-cart ml-1"></i></span></a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">  
+                <div class="product d-flex flex-column">
+                    <a href="{% static 'img/Resume and CV/resume-cv-5.png' %}" class="img-prod"><img class="img-fluid" src="{% static 'img/Resume and CV/resume-cv-5.png' %}" alt="Resume Generator">
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">         
+                        <div class="cat">
+                            <!-- <span> 
+                                <p>    </p>
+                                   
+                            </span> -->
+                        </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#"> 
+                            <p>  </p>
+                               
+                        </a></h3>
+                        <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="{% url 'letterhead_generator_s5' %}" class="add-to-cart text-center py-2 mr-1"><span>GENERATE FROM THIS SAMPLE <i class="ion-ios-add ml-1"></i></span></a>
+                            <!-- <a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                    <a href="{% static 'img/Resume and CV/resume-cv-6.png' %}" class="img-prod"><img class="img-fluid" src="{% static 'img/Resume and CV/resume-cv-6.png' %}" alt="Resume Generator">
+   
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span> 
+                                    <p>    </p>
+                                       
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#"> 
+                            <p>  </p>
+                               
+                        </a></h3>
+                          <!-- <div class="pricing">
+                            <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="{% url 'letterhead_generator_s6' %}" class="add-to-cart text-center py-2 mr-1"><span>GENERATE FROM THIS SAMPLE <i class="ion-ios-add ml-1"></i></span></a>
+                            <!-- <a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product">
+                    <a href="{% static 'img/Resume and CV/resume-cv-7.png' %}" class="img-prod"><img class="img-fluid" src="{% static 'img/Resume and CV/resume-cv-7.png' %}" alt="Resume Generator">
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span> 
+                                    <p>    </p>
+                                       
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#"> 
+                            <p>  </p>
+                               
+                        </a></h3>
+                          <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="{% url 'letterhead_generator_s7' %}" class="add-to-cart text-center py-2 mr-1"><span>GENERATE FROM THIS SAMPLE<i class="ion-ios-add ml-1"></i></span></a>
+                            <!-- <a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="{% static 'img/Letterheads/sample8.png' %}" alt="Resume Generator">
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span> 
+                                    <p>    </p>
+                                       
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#"> 
+                            <p>  </p>
+                               
+                        </a></h3>
+                          <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <!--
+                        <p class="bottom-area d-flex px-3">
+                            <a href="{% url 'letterhead_generator_s8' %}" class="add-to-cart text-center py-2 mr-1"><span>GENERATE FROM THIS SAMPLE <i class="ion-ios-add ml-1"></i></span></a>
+                            <a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a> -->
+                        </p>
+                    </div>
+                </div>
+            </div> 
+
+  
+
+
+            
+        </div>
+    </div>
+</section>
+
+
+
+<!-- It ends here -->
+
+
+<section id="contact" class="content-section">
+         
+    <div id="contact-content">
+     
+
+             
+            <p>    </p>
+            <p>  </p>
+            
+               
+            
+            
+     
+
+
+        <!-- <page size="A4"></page> -->
+
+
+
+</section>
+
+
+<!-- The javascript files begins here-->
+<script src="{% static 'js3/jquery.min.js' %}"></script>
+<script src="{% static 'js3/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'js3/popper.min.js' %}"></script>
+<script src="{% static 'js3/bootstrap.min.js' %}"></script>
+<script src="{% static 'js3/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js3/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js3/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js3/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js3/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js3/aos.js' %}"></script>
+<script src="{% static 'js3/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'js3/bootstrap-datepicker.js' %}"></script>
+<script src="{% static 'js3/scrollax.min.js' %}"></script>
+<script src="{% static 'js3/main.js' %}"></script>
+
+
+<!-- The js files ends here-->
+
+{% endblock %}

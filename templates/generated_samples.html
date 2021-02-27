@@ -1,0 +1,399 @@
+<title>Create a Letterhead Now | BEBOSS</title>
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+<!-- The css files are here-->
+<link rel="stylesheet" type="text/css" href="{% static 'css2/letterhead_gen.css' %}">
+<link rel="stylesheet" href="{% static 'css3/open-iconic-bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css3/animate.css' %}">
+
+<link rel="stylesheet" href="{% static 'css3/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css3/owl.theme.default.min.css' %}">
+<link rel="stylesheet" href="{% static 'css3/magnific-popup.css' %}">
+
+<link rel="stylesheet" href="{% static 'css3/aos.css' %}">
+
+<link rel="stylesheet" href="{% static 'css3/ionicons.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'css3/bootstrap-datepicker.css' %}">
+<link rel="stylesheet" href="{% static 'css3/jquery.timepicker.css' %}">
+
+
+<link rel="stylesheet" href="{% static 'css3/flaticon.css' %}">
+<link rel="stylesheet" href="{% static 'css3/icomoon.css' %}">
+<link rel="stylesheet" href="{% static 'css3/style.css' %}">
+<!-- The css files ends here -->
+
+<!-- This html file for css3 section starts here-->
+<section class="ftco-section bg-light">
+    <div class="container">
+            <div class="row justify-content-center mb-3 pb-3">
+      <div class="col-md-12 heading-section text-center ftco-animate">
+        <h2 class="mb-4">Letterhead Generator Completed</h2>
+        <p>Click to Download</p>
+      </div>
+    </div>   		
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                    {% for each in dataset %}
+                    <a href="#" class="img-prod"><img class="img-fluid" src="{{each.image_upload.url}}" alt="Colorlib Template">
+                        {% endfor %}
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>            {% for each in dataset %}
+                                    <p>{{ each.business }}</p>
+                                    {% endfor %}
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!--  I removed star from here-->
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#">{% for each in dataset %}
+                            <p>{{ each.tagline }}</p>
+                            {% endfor %}
+                        </a></h3>
+                        <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="{% url 'samples_generated' %}" class="add-to-cart text-center py-2 mr-1"><span>Download<i class="ion-ios-add ml-1"></i></span></a>
+                            <a href="{% url 'send-downloaded-letterhead' %}" class="buy-now text-center py-2">Mail to Me<span><i class="ion-ios-cart ml-1"></i></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                    {% for each in dataset %}
+                    <a href="#" class="img-prod"><img class="img-fluid" src="{{each.image_upload.url}}" alt="Colorlib Template">
+                        {% endfor %}
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>            {% for each in dataset %}
+                                    <p>{{ each.business }}</p>
+                                    {% endfor %}
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#">{% for each in dataset %}
+                            <p>{{ each.tagline }}</p>
+                            {% endfor %}
+                        </a></h3>
+                          <!-- <div class="pricing">
+                            <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                            <a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="{% static 'img/product-1.png' %}" alt="Colorlib Template">
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>{% for each in dataset %}
+                                    <p>{{ each.business }}</p>
+                                    {% endfor %}
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        
+                       <h3><a href="#">{% for each in dataset %}
+                        <p>{{ each.tagline }}</p>
+                        {% endfor %}
+                    </a></h3>
+                          <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                            <a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="{% static 'img/product-1.png' %}" alt="Colorlib Template">
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">         
+                        <div class="cat">
+                            <span>{% for each in dataset %}
+                                <p>{{ each.business }}</p>
+                                {% endfor %}
+                            </span>
+                        </div>
+
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#">{% for each in dataset %}
+                            <p>{{ each.tagline }}</p>
+                            {% endfor %}
+                        </a></h3>
+                          <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                            <a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="{% static 'img/product-1.png' %}" alt="Colorlib Template">
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">         
+                        <div class="cat">
+                            <span>{% for each in dataset %}
+                                <p>{{ each.business }}</p>
+                                {% endfor %}
+                            </span>
+                        </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#">{% for each in dataset %}
+                            <p>{{ each.tagline }}</p>
+                            {% endfor %}
+                        </a></h3>
+                        <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="{% url 'pdf' %}" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                            <a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="{% static 'img/product-1.png' %}" alt="Colorlib Template">
+   
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>{% for each in dataset %}
+                                    <p>{{ each.business }}</p>
+                                    {% endfor %}
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#">{% for each in dataset %}
+                            <p>{{ each.tagline }}</p>
+                            {% endfor %}
+                        </a></h3>
+                          <!-- <div class="pricing">
+                            <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                            <a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="{% static 'img/product-1.png' %}" alt="Colorlib Template">
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>{% for each in dataset %}
+                                    <p>{{ each.business }}</p>
+                                    {% endfor %}
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#">{% for each in dataset %}
+                            <p>{{ each.tagline }}</p>
+                            {% endfor %}
+                        </a></h3>
+                          <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                            <a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="{% static 'img/product-1.png' %}" alt="Colorlib Template">
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>{% for each in dataset %}
+                                    <p>{{ each.business }}</p>
+                                    {% endfor %}
+                                </span>
+                            </div>
+                            <div class="rating">
+                                <p class="text-right mb-0">
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <!-- <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    <a href="#"><span class="ion-ios-star-outline"></span></a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <h3><a href="#">{% for each in dataset %}
+                            <p>{{ each.tagline }}</p>
+                            {% endfor %}
+                        </a></h3>
+                          <!-- <div class="pricing">
+                            <p class="price"><span>$120.00</span></p>
+                        </div> -->
+                        <p class="bottom-area d-flex px-3">
+                            <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                            <a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- It ends here -->
+
+
+<section id="contact" class="content-section">
+         
+    <div id="contact-content">
+     
+
+            {% for each in dataset %}
+            <p>{{ each.business }}</p>
+            <p>{{ each.tagline }}</p>
+            <p>{{ each.message1 }}</p>
+            <p>{{ each.email }}</p>
+            <p>{{ each.website }}</p>
+            {% endfor %}
+            
+            
+     
+
+
+        <!-- <page size="A4"></page> -->
+
+
+
+</section>
+
+
+<!-- The javascript files begins here-->
+<script src="{% static 'js3/jquery.min.js' %}"></script>
+<script src="{% static 'js3/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'js3/popper.min.js' %}"></script>
+<script src="{% static 'js3/bootstrap.min.js' %}"></script>
+<script src="{% static 'js3/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js3/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js3/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js3/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js3/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js3/aos.js' %}"></script>
+<script src="{% static 'js3/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'js3/bootstrap-datepicker.js' %}"></script>
+<script src="{% static 'js3/scrollax.min.js' %}"></script>
+<script src="{% static 'js3/main.js' %}"></script>
+
+
+<!-- The js files ends here-->
+
+{% endblock %}

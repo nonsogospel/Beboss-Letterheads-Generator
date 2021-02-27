@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{data.0}} Letterhead</title>
+        <style>
+            @page {size: auto; margin: 0mm;
+            }
+            @font-face {
+                font-family: Play Day;
+                src: url({% static 'fonts3/play_day_-_personal_use-webfont.woff' %});
+             }
+             
+                 .box{
+                     position: relative;
+                     display: inline-block; /* Make the width of box same as image */
+                 }
+                 .box .text{
+                     position: absolute;
+                     z-index: 999;
+                     margin: 0 auto;
+                     left: 0;
+                     right: 19;
+                     top: 4%; /* Adjust this value to move the positioned div up and down */
+                     text-align:right;
+                     width: 94%; /* Set the width of the positioned div */
+                     font-family:FreeSans;
+                     font-size: 20px;
+                     color:rgb(212,21,122);
+                 }
+                 
+                     .box .text2{
+                     position: absolute;
+                     z-index: 999;
+                     margin: 0 auto;
+                     left: 0;
+                     right: 0;
+                     top: 97.5%; /* Adjust this value to move the positioned div up and down */
+                     text-align:left;
+                     width: 91%;
+                     font-family: Georgia;
+                     font-size:5px;
+                     color: white;
+             
+                 }
+                 
+ 
+                 
+                     .box .text4{
+                     position: absolute;
+                     z-index: 999;
+                     margin: 0 auto;
+                     left: 0;
+                     right: 0;
+                     top: 97.7%; /* Adjust this value to move the positioned div up and down */
+                     text-align: left;
+                     width:32%;
+                     font-family: Georgia;
+                     font-size: 4px;
+                     color: white;
+             
+                 }
+
+                 .box .text6{
+                    position: absolute;
+                    z-index: 999;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                    top: 97.7%; /* Adjust this value to move the positioned div up and down */
+                    text-align:right;
+                    width:19%;
+                    font-family: Georgia;
+                    font-size: 4px;
+                    color: white;
+            
+                }
+
+                 .box .text3{
+                    position: absolute;
+                    z-index: 999;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                    top: 90%; /* Adjust this value to move the positioned div up and down */
+                    text-align:right;
+                    width:92%;
+                    font-family:Bernard MT Condensed;
+                    font-size: 7px;
+                    color:yellow;
+            
+                }
+                 
+                     .box .text5{
+                     position: absolute;
+                     z-index: 999;
+                     margin: 0 auto;
+                     left: 0;
+                     right: 0;
+                     top: 97.7%; /* Adjust this value to move the positioned div up and down */
+                     text-align:right;
+                     width:75%;
+                     font-family: Georgia;
+                     font-size: 4px;
+                     color: white;
+             
+                 }
+
+                 .box .text7{
+                    position: absolute;
+                    z-index: 999;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                    top: 0.5%; /* Adjust this value to move the positioned div up and down */
+                    text-align: right;
+                    width: 55%;
+                   
+                    font-family: Georgia;
+                    font-size: 7px;
+                    color: white;
+            
+                }
+                 
+             
+        </style>
+    </head>
+
+<body onload="window.print()">
+    <div class="box">
+        <img src="{% static 'img/Letterheads/blankLetterheads/blank_sample13.png' %}" alt="Kindly Reload browser">
+		        <div class="text">
+            <h1>{{data.0}}</h1>
+        </div>
+    		        <div class="text2">
+            <h1>{{data.5}}</h1>
+        </div>
+		
+
+				   <div class="text4">
+            <h1>{{data.3}}</h1>
+        </div>
+
+        <div class="text6">
+            <h1>{{data.6}}</h1>
+        </div>
+		
+				<div class="text5">
+            <h1>{{data.4}}</h1>
+        </div>
+
+        <div class="text3">
+            <h1><b>{{data.1}}</b></h1>
+        </div>
+
+        <div class="text7">  <!-- The logo -->
+            <h1><img src="media/images/{{data.7}}" style="width:15%"> </h1>
+        </div>
+		
+    </div>
+	
+</body>
+</html>

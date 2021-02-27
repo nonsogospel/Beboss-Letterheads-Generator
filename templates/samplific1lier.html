@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{data.0}} Letterhead</title>
+        <style>
+            @page {size: auto; margin: 0mm;
+            }
+            @font-face {
+                font-family: Play Day;
+                src: url({% static 'fonts3/play_day_-_personal_use-webfont.woff' %});
+             }
+             
+                 .box{
+                     position: relative;
+                     display: inline-block; /* Make the width of box same as image */
+                 }
+                 .box .text{
+                     position: absolute;
+                     z-index: 999;
+                     margin: 0 auto;
+                     left: 0;
+                     right: 19;
+                     top: -3.5%; /* Adjust this value to move the positioned div up and down */
+                  
+                     width: 45%; /* Set the width of the positioned div */
+                     font-family: Cooper Black;
+                     font-size: 23px;
+                     color: red;
+                 }
+
+                 .box .duplicate_text{
+                    position: absolute;
+                    z-index: 999;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 19;
+                    top: -3%; /* Adjust this value to move the positioned div up and down */
+                 
+                    width: 45%; /* Set the width of the positioned div */
+                    font-family: Cooper Black;
+                    font-size: 23px;
+                    color: black;
+                }
+                 
+                 
+                .box .text3{
+                    position: absolute;
+                    z-index: 999;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 32;
+                    top: 99.2%; /* Adjust this value to move the positioned div up and down */
+                    width: 60%; /* Set the width of the positioned div */
+                    text-align: right;
+                    font-family:Arial;
+                    font-size: 10px;
+                    color: black;
+                }
+
+
+                 .box .text2{
+                    position: absolute;
+                    z-index: 999;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 32;
+                    top: 1%; /* Adjust this value to move the positioned div up and down */
+                    width: 71%; /* Set the width of the positioned div */
+                    text-align: right;
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-size: 6px;
+                    color: orange;
+                }
+
+                .box .text6{
+                    position: absolute;
+                    z-index: 999;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 32;
+                    top: 1%; /* Adjust this value to move the positioned div up and down */
+                    width: 57.8%; /* Set the width of the positioned div */
+                    text-align: right;
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-size: 6px;
+                    color: orange;
+                }
+
+                .box .text5{
+                    position: absolute;
+                    z-index: 999;
+                    margin: 0 auto;
+                    left:0.1;
+                    right: 0;
+                    top: 1%; /* Adjust this value to move the positioned div up and down */
+                    width: 24%; /* Set the width of the positioned div */
+                    text-align: left;
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-size: 6px;
+                    color: orange;
+                }
+
+                .box .text7{
+                    position: absolute;
+                    z-index: 999;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 32;
+                    top: 95%; /* Adjust this value to move the positioned div up and down */
+                    width: 90%; /* Set the width of the positioned div */
+                    text-align: right;
+                    font-family:Arial;
+                    font-size: 10px;
+                    color: black;
+                }
+                 
+                 
+             
+        </style>
+    </head>
+
+<body onload="window.print()">
+    <div class="box">
+        <img src="{% static 'img/Letterheads/blankLetterheads/blank_sample1.png' %}" alt="Kindly Reload browser">
+		        <div class="duplicate_text">
+            <h1>{{data.0}}</h1>
+        </div>
+        <div class="text">
+            <h1>{{data.0}}</h1>
+        </div>
+
+		
+		    		 <div class="text3">
+            <h3><i>-{{data.1}}-</i></h3>
+        </div>
+        
+
+        <div class="text2">
+            <h1><b style="color:green; font-family:Georgia">[EMAIL]:</b>{{data.3}}</h1>
+        </div>
+
+        <div class="text6"><br /><br /><br /><br />
+            <h1><b style="color:green; font-family:Georgia">[TEL]:</b>{{data.6}}</h1>
+        </div>
+
+        <div class="text5">
+            <h1><b style="color:green; font-family:Georgia">[ADDRESS]:</b>{{data.5}}</h1>
+        </div>
+
+        <div class="text7">
+            <h1>{{data.2}}</h1>
+        </div>
+		
+	
+		
+    </div>
+	
+</body>
+</html>

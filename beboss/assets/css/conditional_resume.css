@@ -1,0 +1,23 @@
+    .box{
+        color: #fff;
+        padding: 20px;
+        display: none;
+        margin-top: 20px;
+    }
+    .red{ background: white; }
+    .green{ background: white; }
+    .blue{ background: white; }
+	.yellow{ background: white; }
+	.orange{ background: white; }
+	.purple{ background: white; }
+	
+	
+    .apple{ background: white; }
+    .banana{ background: white; }
+    .pineapple{ background: white; }
+	.cashew{ background: white; }
+	.guava{ background: white; }
+	.mango{ background: white; }
+	
+	.ref1{ background: white; }
+    .ref2{ background: white; }
